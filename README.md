@@ -12,7 +12,7 @@
 - Add env vars and/or Rails credentials for:
   - `TWILIO_AUTH_TOKEN`
   - `TWILIO_ACCOUNT_SID`
-  - `TWILIO_VERIFY_SERVICE_SID`
+  - `TWILIO_SERVICE_SID`
 - Create/run a migration to rename  and add the following columns
   ```ruby
     class MigrateAuthyToTwilioVerify < ActiveRecord::Migration[6.1]
@@ -79,7 +79,7 @@ First get your Twilio Verify API key from [the Twilio console](https://www.twili
 ```bash
 $ export TWILIO_AUTH_TOKEN=YOUR_TWILIO_AUTH_TOKEN
 $ export TWILIO_ACCOUNT_SID=YOUR_TWILIO_ACCOUNT_SID
-$ export TWILIO_VERIFY_SERVICE_SID=YOUR_TWILIO_VERIFY_SERVICE_SID
+$ export TWILIO_SERVICE_SID=YOUR_TWILIO_SERVICE_SID
 ```
 
 Next add the gem to your Gemfile:
